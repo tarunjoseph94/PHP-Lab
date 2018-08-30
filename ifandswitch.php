@@ -4,16 +4,17 @@
 </head>
 	<body>
 		<?php
-		$color="Red";
+		
 		echo "<h2>If  </h2><br>";
+		$color="Red";
 		if($color=="Red")
 		{
 
 			echo "Red <br>";
 		}
 		
-		$color="Red";
 		echo "<h2>If..else  </h2><br>";
+		$color="Red";
 		if($color=="Blue")
 		{
 			echo "Blue <br>";
@@ -24,8 +25,8 @@
 			echo "Red <br>";
 		}
 		
-		$color="Red";
 		echo "<h2>elseIf  </h2><br>";
+		$color="Red";
 		if($color=="Blue")
 		{
 			echo "Blue <br>";
@@ -39,16 +40,21 @@
 		{
 			echo "Red <br>";
 		}
+
+
 		echo "<h2>switch  </h2><br>";
-		$color="red";
+		$color="Blue";
 		switch ($color) {
 			case "red":
+			//WHAT IS BETWEEN THE " " ie red IS CASE SENSITIVE BE CAREFUL
 				echo "The color is red <br>"; 
 				break;
-			case "green":
+			case "Green":
+			//WHAT IS BETWEEN THE " " ie green IS CASE SENSITIVE BE CAREFUL
 				echo "The color is green <br>"; 
 				break;
-			case "blue":
+			case "Blue":
+			//WHAT IS BETWEEN THE " " ie blue IS CASE SENSITIVE BE CAREFUL
 				echo "The color is blue <br>"; 
 				break;
 
@@ -56,6 +62,7 @@
 			echo "Color not found <br>";
 								break;
 		}
+
 		?>
 	</body>
 </html>
