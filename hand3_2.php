@@ -12,7 +12,8 @@
 		{
 			$date=$_POST['txt'];
 			$dateobj = date_create_from_format('d/m/Y', $date);
-			echo date_format($dateobj,'d M Y');
+			echo date_format($dateobj,'d M Y')."<br>";
+			// echo $dateobj->format("%d days %m months %y years");
 		}
 		?>
 	</body>

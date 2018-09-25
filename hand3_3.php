@@ -14,13 +14,12 @@
 			$dateobj=date_create_from_format('d/m/Y',$date);
 			$dateformat=$dateobj->format('Y/m/d');
 			$datetest=new DateTime($dateformat);
+			
 			$now= new DateTime("now");
-			
-			//print_r($now);
-			
+						
 			$res=$now->diff($datetest);
-			//Works make proper format
-			print_r($res);
+
+			echo $res->format("%d days %m months %y years");
 		}
 		?>
 	</body>
