@@ -18,8 +18,8 @@
 			$a=0;
 			echo "$a<br>";
 			$b=1;
-			echo "$b<br>";
-			$num1-=2;
+			//echo "$b<br>";
+			$num1-=1;
 			fibo($num1,$a,$b);
 			
 				
