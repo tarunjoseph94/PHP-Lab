@@ -20,7 +20,7 @@
 		function calPeri($len,$bre)
 		{
 
-			return (2*$len)*(2*$bre);
+			return (2*$len)+(2*$bre);
 		}
 	}
 	?>
