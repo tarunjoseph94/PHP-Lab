@@ -31,11 +31,9 @@
 		{
 			if($num1 !=0) 
 			{
-					$temp=$b;
-					$b=$b+$a;
-					$a=$temp;
+					
 					echo "$b<br>";				
-					fibo($num1-1,$a,$b);
+					fibo($num1-1,$b,$a+$b);
 			}
 
 		}
