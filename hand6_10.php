@@ -23,9 +23,8 @@
 			$fname=$_POST['fname'];
 			try
 			{
-				//@is used to supress the warning
-				$fp=@fopen($fname,'r');
-				if ($fp=="")
+				
+				if (!file_exists($fname))
 				{
 				//	echo "Not found";
 					throw new fileNotFound("File does not exists");
@@ -46,6 +45,7 @@
 					
 					//OR
 
+					$fp=fopen($fname,'r');
 					$flength=file($fname);
 					$count=count($flength);
 					echo "The number of lines in $fname is $count";
