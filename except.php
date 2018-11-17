@@ -5,7 +5,7 @@ if(isset($_POST['except']))
 
 switch ($test) {
 	//case 1 will not work
-	//Parse errors are starnge like that
+	//Parse errors are strange like that
 	case 1://trigger_error("Value must be 1 or below",E_PARSE);
 
 		# code...
