@@ -23,8 +23,7 @@
             xhttp.open("GET", "ajaxcolor.php?num="+i, true);
             xhttp.send();
             i++;
-            if(i==4)
-            i=0;
+            
             }
             </script>    
     </body>
