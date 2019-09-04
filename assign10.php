@@ -15,10 +15,10 @@
 			$sec=$min=$hour=0;
 			$sec=$_POST['sec'];
 			
-			if($sec>100)
+			if($sec>60)
 			{
-			$min=intval($sec/100);
-			$sec%=100;	
+			$min=intval($sec/60);
+			$sec%=60;	
 			}
 			if($min>60)
 			{
